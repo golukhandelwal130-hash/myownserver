@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The meta tag forces the browser to route to the destination instantly -->
     <meta http-equiv="refresh" content="0; url=http://localhost/admin">
-    <title>Redirecting...</title>
+    <title>Redirecting to Local Environment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <script>
-        window.location.href = "http://localhost/admin";
-    </script>
+    <div class="container">
+        <h2>Redirecting to Local Admin</h2>
+        <p>If your browser blocks the automatic redirect, click the button below:</p>
+        <!-- The explicit link gives the user a valid, clickable path that bypasses CSP locks -->
+        <a href="http://localhost/admin">Go to Localhost Admin</a>
+    </div>
 </body>
 </html>
